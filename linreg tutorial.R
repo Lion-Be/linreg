@@ -26,14 +26,14 @@ linreg <- function(y, ...) {
   # Estimating Regression Model
   
     # Regression Coefficients
-    # Transpose of X multiplied with X
+    # Inverse of (transpose of X multiplied with X)
     tX.X <-solve(t(x.matrix)%*%x.matrix) 
     
     # Multiplying with Transpose of X
     X <- tX.X%*%t(x.matrix) 
     
     # Multiplying with Y
-    b <- X%*%y.matrix 
+    b <- X%*%y.matrix # ols coefficients
     
     # Predicted Values and Residuals
     yhat <- x.matrix%*%b
