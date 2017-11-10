@@ -11,16 +11,16 @@ linreg <- function(y, ...) {
   
   # Constructing Matrix for Independent Variable
   
-  # The Object predictors is defined as a list of all predictor variables the user entered
-  predictors <- list(...) # This command can accept any number of predictor variables
-  
-  # The list of predictors is bound together in a matrix
-  x.matrix.initial <- do.call(cbind,predictors) 
-  
-  # A column of 1s for the intercept is added. 
-  x.matrix <- cbind(x.matrix.initial, rep(1, nrow(x.matrix.initial)))
-  # The number of 1s added depends on the number of cases (nrow(x.matrix.initial))
-  # Any number will work. The adequate number will be added. 
+    # The Object predictors is defined as a list of all predictor variables the user entered
+    predictors <- list(...) # This command can accept any number of predictor variables
+
+    # The list of predictors is bound together in a matrix
+    x.matrix.initial <- do.call(cbind,predictors) 
+
+    # A column of 1s for the intercept is added. 
+    x.matrix <- cbind(x.matrix.initial, rep(1, nrow(x.matrix.initial)))
+    # The number of 1s added depends on the number of cases (nrow(x.matrix.initial))
+    # Any number will work. The adequate number will be added. 
   
   
   # Estimating Regression Model
