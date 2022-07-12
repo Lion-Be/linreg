@@ -1,4 +1,7 @@
-# linreg
-
-This is an annotated tutorial on how to program an OLS regression using matrix algebra. Step by step, a function is created that
-takes the dependent variable and any number of predictors as input. As output, a nicely-shaped regression table is emerging. 
+# Programming an R Function for Linear Regression
+## :star: Purpose
+This code consists of a programming exercise that I worked on in the first semester of my M.Sc. studies in [Methodology and Statistics](https://www.uu.nl/masters/en/methodology-and-statistics-behavioural-biomedical-and-social-sciences) at the [University of Utrecht](https://www.uu.nl/en). I manually 
+construct a function that
+- takes the dependent and independent variables as input
+- computes the OLS solution using matrix algebra
+- presents the results in a well-formatted regression table
